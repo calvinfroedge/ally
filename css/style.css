@@ -1,0 +1,63 @@
+@-webkit-keyframes fadein {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes fadein {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes fadein {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fadein {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}      
+@font-face { font-family: essay;src: url(/font/essays1743/Essays1743.ttf);}
+
+html, body { margin:0;font-family:essay;-webkit-animation:fadein 1s;-moz-animation:fadein 1s;-o-animation:fadein 1s;animation:fadein 1s;font-size:1.2em;}
+#content { background: #fff;margin:0 auto;position:relative;width:90%;overflow:auto;}
+#graphic { width:50%;}
+h1 { color:#841313;}
+h1, h2 { margin:0;}
+#benefits { margin-left:0;padding-left:0;margin-bottom:20px;overflow:auto;}
+#benefits li { list-style:none;text-indent:80px;line-height:100px;margin-bottom:20px;margin-left:0;float:left;width:50%;background-size:60px;}
+.coin { background:url('/img/coin.png') no-repeat center left;}
+.anywhere { background:url('/img/castle.png') no-repeat center left;}
+.wages { background:url('/img/wheat.png') no-repeat center left;}
+.stimulating { background:url('/img/sun.png') no-repeat center left;}
+#join { background:#841313 url('/img/octocat.png') no-repeat center left;background-origin:content-box;background-size:45px;padding:10px 15px 10px 15px;display:inline-block;color:#fff;text-decoration:none;border-radius:15px;font-size:1.5em;text-indent:60px;position:relative;margin:0 auto !important;}
+#notification { background:#ccc;top:0;left:0;width:100%;text-indent:10px;line-height:2.5em;}
+
+@media (min-width:1281px) {
+    h1, h2, #benefits, #join { float:left;clear:left;margin:0;}
+    h1, h2, #benefits { width:50%;}
+    #mission { width:100%;clear:both;padding-top:50px;}
+}
+
+@media (max-width:1280px) {
+    h1, h2, #benefits, #join { float:left;clear:left;}
+    h1, h2, #benefits { width:100%;}
+    #benefits li { width:50%;}
+    #graphic { margin-top:0px;float:right;}
+    #graphic, #mission { width:50%;display:inline-block;}
+    #mission { clear:left;width:50%;float:left;}
+}
+
+@media (max-width:768px) {
+    html, body { font-size:1.1em;}
+    h2 { font-size:1.2em;}
+    h1, h2, li, p { margin:10px 0 30px 0;text-align:left;}
+    #join { margin-bottom:50px !important;margin-top:80px !important;}
+    #mission { width:100%;}
+}
+
+@media (max-width:540px) {
+    html, body { font-size:1em;text-align:center;}
+    h1 { margin:0;}
+    h2 { font-size:1.2em;margin:0;}
+    #benefits li { font-size:1.2em;width: auto !important;margin:0;float:none;}
+    #join { display:block;margin-bottom:20px !important;float:none;text-align:left;}
+    h1, h2, #benefits, #graphic, #mission { width:100%;}
+}
